@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = [
+  "scenes/feeler-sparrow",
+]
+
+[package]
+name = "feelers"
+version = "0.0.0"
+edition = "2021"
+authors = ["Cuprum Wangzuo <cuprumwz@foxmail.com>"]
+description = "Feelers for Spiders project"
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
