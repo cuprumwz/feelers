@@ -1,10 +1,10 @@
 {
     "version": 1,
     "editor": "wokwi",
-    "author": "Cuprum Wangzuo <cuprumwz@foxmail.com>",
+    "author": "{{authors}}",
     "parts": [
         {
-            "type": "board-esp32-c3-devkitm-1",
+            "type": "{{ wokwi_board }}",
             "id": "esp",
             "top": 0.59,
             "left": 0.67,

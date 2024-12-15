@@ -1,13 +1,13 @@
 {
-  "name": "bifrost",
+  "name": "{{ crate_name }}",
   // Select between image and build properties to pull or build the image.
-  // "image": "docker.io/espressif/idf-rust:esp32c3_latest",
+  // "image": "docker.io/espressif/idf-rust:{{ mcu }}_latest",
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
       "CONTAINER_USER": "esp",
       "CONTAINER_GROUP": "esp",
-      "ESP_BOARD": "esp32c3"
+      "ESP_BOARD": "{{ mcu }}"
     }
   },
   "customizations": {
@@ -43,6 +43,6 @@
     8000,
     3333
   ],
-  "workspaceMount": "source=${localWorkspaceFolder},target=/home/esp/bifrost,type=bind,consistency=cached",
-  "workspaceFolder": "/home/esp/bifrost"
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/esp/{{ crate_name }},type=bind,consistency=cached",
+  "workspaceFolder": "/home/esp/{{ crate_name }}"
 }
